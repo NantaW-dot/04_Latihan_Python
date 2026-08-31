@@ -14,15 +14,16 @@ def cek_bilangan(angka):
     else:
         return f"{angka} Adalah Bilangan Ganjil."
 
-def main():
-    """Fungsi utama untuk menjalankan perulangan dan menerima input pengguna."""
+def jalankan_cek_bilangan():
+    """Fungsi untuk menjalankan perulangan dan menerima input pengguna."""
+    print("\n--- Program Cek Bilangan ---")
     print("Ketik 'keluar' untuk menghentikan program.")
 
     while True:
         user_input = input("Masukkan Sebuah Bilangan (atau ketik 'keluar'): ")
 
         if user_input.lower() == "keluar":
-            print("Program berhenti. Terima kasih!")
+            print("Kembali ke menu utama...\n")
             break
 
         if user_input.isdigit():
@@ -38,6 +39,3 @@ def main():
             
         else:
             print("Input tidak valid. Masukkan angka yang benar atau 'keluar'.\n")
-
-if __name__ == "__main__":
-    main()
